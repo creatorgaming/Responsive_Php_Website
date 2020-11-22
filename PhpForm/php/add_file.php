@@ -9,7 +9,7 @@
 		$conn = mysqli_connect("localhost","root","","testdatabase");
 
 		$query = "INSERT INTO List(Title, Description, DueDate) VALUES ('$title','$description','$duedate')";
-
+		
 		if(mysqli_query($conn, $query)){
 			echo "query saved";
 			header("Location: ../index.php");

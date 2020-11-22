@@ -29,31 +29,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `list` (
-  `SNo` int(11) NOT NULL,
+  `SNo` int(11) NOT NULL AUTO_INCREMENT,
   `Title` varchar(25) NOT NULL,
   `Description` varchar(255) NOT NULL,
-  `DueDate` date NOT NULL
+  `DueDate` date NOT NULL,
+   PRIMARY KEY (`SNo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `List`
---
-ALTER TABLE `List`
-  ADD PRIMARY KEY (`SNo`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `List`
---
-ALTER TABLE `List`
-  MODIFY `SNo` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
